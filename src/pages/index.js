@@ -23,9 +23,8 @@ export default () => {
       <KeepAlive>
         <div id="container" className={styles.content}>
           <div className={styles.block} />
-          <AntdList renderItem={renderItem} />
-          {/* <AutoLoadList renderItem={renderItem} /> */}
-          {/* <VirtualizedList renderItem={renderItem} /> */}
+          {/* <AntdList renderItem={renderItem} /> */}
+          <VirtualizedList renderItem={renderItem} />
         </div>
       </KeepAlive>
     </div>
