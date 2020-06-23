@@ -23,8 +23,10 @@ let startIndex = 0;
 
 const VirtualizedList = ({ renderItem }) => {
   const [list, setList] = useState([]);
+  const [_, setRandomKey] = useState(Math.random);
 
   useActivate(() => {
+    setRandomKey(Math.random);
     console.log('TestFunction: didActivate');
   });
 
